@@ -6,20 +6,16 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-
     background: #f7f8fa;
-
     color: #172333;
-
     min-height: 100vh;
 }
 
 
-/* SIDEBAR */
+/* ================= SIDEBAR ================= */
 
 .sidebar {
     position: fixed;
-
     left: 0;
     top: 0;
 
@@ -27,10 +23,15 @@ body {
     height: 100vh;
 
     background: #111111;
-
     color: white;
+
+    z-index: 1000;
+
+    overflow-y: auto;
 }
 
+
+/* LOGO */
 
 .brand {
     height: 111px;
@@ -41,7 +42,6 @@ body {
 
     padding-top: 26px;
 }
-
 
 .brand h1 {
     font-family: Georgia, serif;
@@ -54,7 +54,6 @@ body {
 
     color: #d0a95c;
 }
-
 
 .brand p {
     color: #777;
@@ -104,13 +103,14 @@ body {
     font-size: 16px;
 }
 
-
 .nav span {
     color: #444;
 
     font-size: 20px;
 }
 
+
+/* ACTIVE LINK */
 
 .nav.active {
     background: #d0a95c;
@@ -121,7 +121,7 @@ body {
 }
 
 
-/* MAIN */
+/* ================= MAIN ================= */
 
 .main {
     margin-left: 286px;
@@ -130,7 +130,7 @@ body {
 }
 
 
-/* TOP BAR */
+/* ================= TOP BAR ================= */
 
 .topbar {
     height: 87px;
@@ -148,13 +148,12 @@ body {
     padding: 0 32px;
 }
 
-
 .topbar h2 {
     font-size: 23px;
 }
 
 
-/* ACCOUNT */
+/* CUSTOMER ACCOUNT */
 
 .account {
     display: flex;
@@ -170,7 +169,6 @@ body {
     font-weight: bold;
 }
 
-
 .user-icon {
     color: #cba557;
 
@@ -178,7 +176,7 @@ body {
 }
 
 
-/* CONTENT */
+/* ================= CONTENT ================= */
 
 .content {
     padding: 34px;
@@ -191,13 +189,11 @@ body {
     margin-bottom: 30px;
 }
 
-
 .welcome h2 {
     font-size: 28px;
 
     margin-bottom: 7px;
 }
-
 
 .welcome p {
     color: #7885a0;
@@ -206,7 +202,7 @@ body {
 }
 
 
-/* CATEGORIES */
+/* ================= CATEGORIES ================= */
 
 .categories {
     display: grid;
@@ -217,7 +213,7 @@ body {
 }
 
 
-/* CATEGORY */
+/* CATEGORY CARD */
 
 .category {
     min-height: 250px;
@@ -239,7 +235,6 @@ body {
     transition: 0.2s;
 }
 
-
 .category:hover {
     transform: translateY(-4px);
 
@@ -254,18 +249,16 @@ body {
     background: #f8eee9;
 }
 
-
 .clothing {
     background: #edf1f8;
 }
-
 
 .bodycare {
     background: #edf5ed;
 }
 
 
-/* CATEGORY ICON */
+/* ICON */
 
 .image-placeholder {
     width: 130px;
@@ -292,16 +285,13 @@ body {
     color: #172333;
 }
 
-
 .bags h3 {
     color: #8f4c4c;
 }
 
-
 .clothing h3 {
     color: #536783;
 }
-
 
 .bodycare h3 {
     color: #4c8055;
@@ -323,7 +313,7 @@ body {
 }
 
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1000px) {
 
@@ -338,7 +328,6 @@ body {
     .categories {
         grid-template-columns: 1fr;
     }
-
 }
 
 
@@ -367,5 +356,4 @@ body {
     .content {
         padding: 18px;
     }
-
 }
