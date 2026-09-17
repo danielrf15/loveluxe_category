@@ -16,7 +16,6 @@ body {
 
 .sidebar {
     position: fixed;
-
     left: 0;
     top: 0;
 
@@ -27,12 +26,8 @@ body {
     color: white;
 
     z-index: 1000;
-
-    overflow-y: auto;
 }
 
-
-/* LOGO */
 
 .brand {
     height: 111px;
@@ -43,6 +38,7 @@ body {
 
     padding-top: 26px;
 }
+
 
 .brand h1 {
     font-family: Georgia, serif;
@@ -55,6 +51,7 @@ body {
 
     color: #d0a95c;
 }
+
 
 .brand p {
     color: #777;
@@ -81,10 +78,6 @@ body {
     margin: 35px 30px 8px;
 }
 
-.team-title {
-    margin-top: 25px;
-}
-
 
 /* SIDEBAR LINKS */
 
@@ -108,6 +101,7 @@ body {
     font-size: 16px;
 }
 
+
 .nav span {
     color: #444;
 
@@ -124,6 +118,7 @@ body {
 
     font-weight: bold;
 }
+
 
 .nav.active span {
     color: white;
@@ -152,13 +147,24 @@ body {
 
     align-items: center;
 
-    justify-content: flex-end;
+    justify-content: space-between;
 
     padding: 0 32px;
 }
 
 
-/* PROFILE */
+/* PAGE TITLE */
+
+.topbar h2 {
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #172333;
+}
+
+
+/* ================= PROFILE ================= */
 
 .profile {
     display: flex;
@@ -170,16 +176,22 @@ body {
     text-align: right;
 }
 
+
 .profile-info strong {
     display: block;
 
-    font-size: 15px;
+    font-size: 16px;
+
+    color: #111111;
 }
+
 
 .profile-info small {
     display: block;
 
-    color: #7b87a0;
+    color: #7885a0;
+
+    font-size: 14px;
 
     margin-top: 3px;
 }
@@ -188,8 +200,8 @@ body {
 /* GOLD F CIRCLE */
 
 .avatar {
-    width: 44px;
-    height: 44px;
+    width: 56px;
+    height: 56px;
 
     border-radius: 50%;
 
@@ -200,9 +212,10 @@ body {
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
-    font-size: 18px;
+    font-size: 22px;
 }
 
 
@@ -219,11 +232,13 @@ body {
     margin-bottom: 30px;
 }
 
+
 .welcome h2 {
     font-size: 28px;
 
     margin-bottom: 7px;
 }
+
 
 .welcome p {
     color: #7885a0;
@@ -265,6 +280,7 @@ body {
     transition: 0.2s;
 }
 
+
 .category:hover {
     transform: translateY(-4px);
 
@@ -279,9 +295,11 @@ body {
     background: #f8eee9;
 }
 
+
 .clothing {
     background: #edf1f8;
 }
+
 
 .bodycare {
     background: #edf5ed;
@@ -315,13 +333,16 @@ body {
     color: #172333;
 }
 
+
 .bags h3 {
     color: #8f4c4c;
 }
 
+
 .clothing h3 {
     color: #536783;
 }
+
 
 .bodycare h3 {
     color: #4c8055;
@@ -358,7 +379,6 @@ body {
     .categories {
         grid-template-columns: 1fr;
     }
-
 }
 
 
