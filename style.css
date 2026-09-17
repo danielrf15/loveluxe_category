@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f7f8fa;
+
+    color: #172333;
+
+    min-height: 100vh;
+}
+
+
+/* TOP BAR */
+
+.topbar {
+    height: 75px;
+
+    background: #111111;
+
+    border-bottom: 3px solid #cba557;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 55px;
+}
+
+
+/* BRAND */
+
+.brand h1 {
+    font-family: Georgia, serif;
+
+    color: #cba557;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+}
+
+.brand p {
+    color: #777;
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+
+    margin-top: 5px;
+}
+
+
+/* ACCOUNT */
+
+.account {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+.user-icon {
+    color: #cba557;
+
+    font-size: 14px;
+}
+
+
+/* MAIN CONTAINER */
+
+.container {
+    max-width: 1100px;
+
+    margin: 45px auto;
+
+    padding: 0 35px;
+}
+
+
+/* WELCOME */
+
+.welcome {
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    font-size: 28px;
+
+    margin-bottom: 7px;
+}
+
+.welcome p {
+    color: #7885a0;
+
+    font-size: 15px;
+}
+
+
+/* CATEGORY SECTION */
+
+.categories {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* CATEGORY CARD */
+
+.category {
+    min-height: 250px;
+
+    border-radius: 12px;
+
+    border: 1px solid #dfe5ec;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.category:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* CATEGORY BACKGROUNDS */
+
+.bags {
+    background: #f8eee9;
+}
+
+.clothing {
+    background: #edf1f8;
+}
+
+.bodycare {
+    background: #edf5ed;
+}
+
+
+/* IMAGE PLACEHOLDER */
+
+.image-placeholder {
+    width: 130px;
+
+    height: 120px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 70px;
+
+    margin-bottom: 10px;
+}
+
+
+/* CATEGORY TITLE */
+
+.category h3 {
+    font-size: 16px;
+
+    color: #172333;
+}
+
+.bags h3 {
+    color: #8f4c4c;
+}
+
+.clothing h3 {
+    color: #536783;
+}
+
+.bodycare h3 {
+    color: #4c8055;
+}
+
+
+/* MESSAGE */
+
+#message {
+    text-align: center;
+
+    color: #cba557;
+
+    font-weight: bold;
+
+    margin-top: 25px;
+
+    min-height: 20px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+
+    .topbar {
+        padding: 0 25px;
+    }
+
+    .container {
+        margin-top: 30px;
+
+        padding: 0 20px;
+    }
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+    .category {
+        min-height: 220px;
+    }
+
+}
