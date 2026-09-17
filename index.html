@@ -5,87 +5,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Love Luxe - Shop</title>
+    <title>Love Luxe - Customer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- TOP BAR -->
+    <!-- SIDEBAR -->
 
-    <header class="topbar">
+    <aside class="sidebar">
 
         <div class="brand">
             <h1>LOVE LUXE</h1>
             <p>BY EA • EST. 2024</p>
         </div>
 
-        <div class="account">
-            <span class="user-icon">●</span>
-            <span>Guest</span>
+
+        <div class="menu-title">
+            GENERAL
         </div>
 
-    </header>
+        <a href="#" class="nav active">
+            Dashboard
+        </a>
+
+
+        <div class="menu-title">
+            CUSTOMER
+        </div>
+
+        <a href="#" class="nav">
+            Products
+            <span>−</span>
+        </a>
+
+        <a href="#" class="nav">
+            My Orders
+            <span>−</span>
+        </a>
+
+        <a href="#" class="nav">
+            Appointments
+            <span>−</span>
+        </a>
+
+
+        <div class="menu-title">
+            ACCOUNT
+        </div>
+
+        <a href="#" class="nav">
+            My Profile
+            <span>−</span>
+        </a>
+
+        <a href="#" class="nav">
+            Logout
+            <span>−</span>
+        </a>
+
+    </aside>
 
 
     <!-- MAIN CONTENT -->
 
-    <main class="container">
+    <main class="main">
 
-        <section class="welcome">
+        <!-- TOP BAR -->
 
-            <h2>Welcome, Customer!</h2>
+        <header class="topbar">
 
-            <p>
-                Browse our products and enjoy shopping.
-            </p>
+            <h2>Customer Dashboard</h2>
+
+            <div class="account">
+
+                <div class="user-icon">
+                    ●
+                </div>
+
+                <span>
+                    Customer
+                </span>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="content">
+
+            <section class="welcome">
+
+                <h2>
+                    Welcome, Customer!
+                </h2>
+
+                <p>
+                    Browse our products and enjoy shopping.
+                </p>
+
+            </section>
+
+
+            <!-- PRODUCT CATEGORIES -->
+
+            <section class="categories">
+
+                <div
+                    class="category bags"
+                    onclick="openCategory('Bags')">
+
+                    <div class="image-placeholder">
+                        👜
+                    </div>
+
+                    <h3>
+                        Bags
+                    </h3>
+
+                </div>
+
+
+                <div
+                    class="category clothing"
+                    onclick="openCategory('Clothing')">
+
+                    <div class="image-placeholder">
+                        👔
+                    </div>
+
+                    <h3>
+                        Clothing
+                    </h3>
+
+                </div>
+
+
+                <div
+                    class="category bodycare"
+                    onclick="openCategory('Body Care Products')">
+
+                    <div class="image-placeholder">
+                        🧴
+                    </div>
+
+                    <h3>
+                        Body Care Products
+                    </h3>
+
+                </div>
+
+            </section>
+
+
+            <p id="message"></p>
 
         </section>
-
-
-        <!-- PRODUCT CATEGORIES -->
-
-        <section class="categories">
-
-            <div class="category bags" onclick="openCategory('Bags')">
-
-                <div class="image-placeholder">
-                    👜
-                </div>
-
-                <h3>Bags</h3>
-
-            </div>
-
-
-            <div class="category clothing" onclick="openCategory('Clothing')">
-
-                <div class="image-placeholder">
-                    👔
-                </div>
-
-                <h3>Clothing</h3>
-
-            </div>
-
-
-            <div class="category bodycare" onclick="openCategory('Body Care Products')">
-
-                <div class="image-placeholder">
-                    🧴
-                </div>
-
-                <h3>Body Care Products</h3>
-
-            </div>
-
-        </section>
-
-
-        <!-- MESSAGE -->
-
-        <p id="message"></p>
 
     </main>
 
