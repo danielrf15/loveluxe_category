@@ -16,6 +16,7 @@ body {
 
 .sidebar {
     position: fixed;
+
     left: 0;
     top: 0;
 
@@ -80,6 +81,10 @@ body {
     margin: 35px 30px 8px;
 }
 
+.team-title {
+    margin-top: 25px;
+}
+
 
 /* SIDEBAR LINKS */
 
@@ -110,7 +115,7 @@ body {
 }
 
 
-/* ACTIVE LINK */
+/* ACTIVE PRODUCT MANAGEMENT */
 
 .nav.active {
     background: #d0a95c;
@@ -118,6 +123,10 @@ body {
     color: white;
 
     font-weight: bold;
+}
+
+.nav.active span {
+    color: white;
 }
 
 
@@ -143,36 +152,57 @@ body {
 
     align-items: center;
 
-    justify-content: space-between;
+    justify-content: flex-end;
 
     padding: 0 32px;
 }
 
-.topbar h2 {
-    font-size: 23px;
-}
 
+/* PROFILE */
 
-/* CUSTOMER ACCOUNT */
-
-.account {
+.profile {
     display: flex;
 
     align-items: center;
 
-    gap: 9px;
+    gap: 15px;
 
-    color: #172333;
-
-    font-size: 14px;
-
-    font-weight: bold;
+    text-align: right;
 }
 
-.user-icon {
-    color: #cba557;
+.profile-info strong {
+    display: block;
 
     font-size: 15px;
+}
+
+.profile-info small {
+    display: block;
+
+    color: #7b87a0;
+
+    margin-top: 3px;
+}
+
+
+/* GOLD F CIRCLE */
+
+.avatar {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    background: #cba557;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
 }
 
 
@@ -328,6 +358,7 @@ body {
     .categories {
         grid-template-columns: 1fr;
     }
+
 }
 
 
@@ -356,4 +387,5 @@ body {
     .content {
         padding: 18px;
     }
+
 }
